@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "iosfwd": "cpp",
-    "stdexcept": "cpp"
+    "stdexcept": "cpp",
+    "format": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
