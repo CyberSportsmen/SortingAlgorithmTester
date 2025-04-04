@@ -1,0 +1,2 @@
+*_interval_*.txt
+generated_files/
