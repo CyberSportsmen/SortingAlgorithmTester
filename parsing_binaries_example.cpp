@@ -16,6 +16,8 @@ enum SortingMethods
   QUICK
 };
 
+char *sortingMethodToString[] = {"STL", "RADIX10", "RADIX2TO16", "MERGE", "SHELL", "QUICK"};
+
 template <class T> class Tester
 {
   vector<T> v;
@@ -30,6 +32,13 @@ public:
   void Push_back(T val)
   {
     v.push_back(val);
+  }
+  bool isSorted()
+  {
+    for (int i = 1; i < v.size(); i++)
+      if (v[i] < v[i - 1])
+        return false;
+    return true;
   }
   void Sort(const SortingMethods m)
   {
@@ -63,6 +72,10 @@ void Testcase(Tester<long long> t)
   {
     const auto m = static_cast<SortingMethods>(i);
     t.Sort(m);
+    if (t.isSorted())
+      cout << sortingMethodToString[i] << " was sorted successfully!\n";
+    else
+      cout << sortingMethodToString[i] << " was NOT sorted correctly!\n";
   }
 }
 
