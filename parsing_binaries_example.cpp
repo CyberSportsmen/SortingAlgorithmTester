@@ -1,19 +1,32 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 
-int main()
+int main(int argc, char *argv[])
 {
-  std::ifstream file("generated_files/random/random_100_interval_-1000000_1000000.bin", std::ios::binary);
+  std::string filename;
+  try
+  {
+    if (argc > 1)
+      filename = argv[1];
+    else
+      throw std::out_of_range("naspa");
+  }
+  catch (std::out_of_range)
+  {
+    std::cerr << "No argument found!\n";
+    return 0;
+  }
+  std::ifstream file(filename, std::ios::binary);
   if (!file)
   {
     std::cerr << "Error opening file for reading!\n";
     return 1;
   }
-
   long long num;
   while (file.read(reinterpret_cast<char *>(&num), sizeof(long long)))
   {
-    std::cout << num << '\n'; // Print each number like a normal text file
+    std::cout << num << ' '; // Print each number like a normal text file
   }
 
   file.close();

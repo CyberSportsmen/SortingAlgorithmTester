@@ -11,8 +11,8 @@ min_int = -2 ** 31
 # ---- END_constants ----
 
 # ---- config -----
-listTags = ["sorted", "sorted descending", "almostsorted", "almostsorted descending", "random"]
-listLengths = [100]  # Adjust as needed
+listTags = ["sorted", "sorted descending", "almostsorted", "almostsorted descending", "random", "samenumbers"]
+listLengths = [10000000]  # Adjust as needed
 listValueIntervals = [
     (0, 100),
     (-100, 100),
@@ -31,14 +31,20 @@ def createBinaryFile(tags, length, valueinterval):
     isSorted = "sorted" in proprieties
     isAlmostSorted = "almostsorted" in proprieties
     isDescending = "descending" in proprieties
-
+    isSameNumbers = "samenumbers" in proprieties
     # Construct the filename
     fileNameOnly = f"{tags.replace(' ', '_')}_{length}_interval_{valueinterval[0]}_{valueinterval[1]}.bin"
     tagDir = os.path.join(baseDir, tags.replace(" ", "_"))
     os.makedirs(tagDir, exist_ok=True)
     filePath = os.path.join(tagDir, fileNameOnly)
 
-    arr = createRandomArray(length, valueinterval)
+    if not isSameNumbers:
+        arr = createRandomArray(length, valueinterval)
+    else:
+        # basically same as the function but only generate the random number once
+        x = random.randint(*valueinterval)
+        arr = [x for _ in range(length)]
+
     if isSorted:
         arr.sort()
     if isAlmostSorted:
@@ -69,6 +75,7 @@ def main():
 
     for thread in threads:
         thread.join()
+    print("finished")
 
 if __name__ == "__main__":
     main()
