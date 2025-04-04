@@ -39,8 +39,6 @@ def createBinaryFile(tags, length, valueinterval):
     filePath = os.path.join(tagDir, fileNameOnly)
 
     arr = createRandomArray(length, valueinterval)
-
-    # Apply sorting logic
     if isSorted:
         arr.sort()
     if isAlmostSorted:
@@ -54,7 +52,7 @@ def createBinaryFile(tags, length, valueinterval):
     # Write in binary mode using struct
     with open(filePath, "wb") as file:
         for value in arr:
-            file.write(struct.pack("q", value))  # "q" means signed long long (8 bytes)
+            file.write(struct.pack("q", value))  # "q" = signed long long
 
 def main():
     threads = []
