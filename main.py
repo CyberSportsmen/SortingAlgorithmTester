@@ -12,7 +12,7 @@ min_int = -2 ** 31
 
 # ---- config -----
 listTags = ["sorted", "sorted descending", "almostsorted", "almostsorted descending", "random", "samenumbers"]
-listLengths = [10000000]  # Adjust as needed
+listLengths = [100]  # Adjust as needed
 listValueIntervals = [
     (0, 100),
     (-100, 100),

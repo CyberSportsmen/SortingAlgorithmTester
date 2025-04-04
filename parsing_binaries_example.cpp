@@ -1,6 +1,10 @@
+#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
+
+using namespace std;
 
 enum SortingMethods
 {
@@ -12,52 +16,53 @@ enum SortingMethods
   QUICK
 };
 
-class<T> Tester
+template <class T> class Tester
 {
   vector<T> v;
 
 public:
   Tester() = default;
-  Tester(vector<T> v_clone)
+
+  explicit Tester(vector<T> v_clone)
   {
     v = v_clone;
   }
-  Push_back(T val)
+  void Push_back(T val)
   {
     v.push_back(val);
   }
-  Sort(method m)
+  void Sort(const SortingMethods m)
   {
     switch (m)
     {
     case STL:
-      sort(v);
+      std::sort(v.begin(), v.end());
       break;
     case RADIX10:
-      sort(v);
+      std::sort(v.begin(), v.end());
       break;
     case RADIX2TO16:
-      sort(v);
+      std::sort(v.begin(), v.end());
       break;
     case MERGE:
-      sort(v);
+      std::sort(v.begin(), v.end());
       break;
     case SHELL:
-      sort(v);
+      std::sort(v.begin(), v.end());
       break;
     case QUICK:
-      sort(v);
+      std::sort(v.begin(), v.end());
       break;
     }
   }
 };
 
-void Testcase(Tester t)
+void Testcase(Tester<long long> t)
 {
-  for (auto method : SortingMethods)
+  for (int i = STL; i <= QUICK; i++)
   {
-    // here we can place the chronometer logic
-    t.Sort(method);
+    const auto m = static_cast<SortingMethods>(i);
+    t.Sort(m);
   }
 }
 
@@ -85,7 +90,7 @@ int main(int argc, char *argv[])
   long long num;
   Tester<long long> t;
   while (file.read(reinterpret_cast<char *>(&num), sizeof(long long)))
-    t.push_back(num);
+    t.Push_back(num);
   Testcase(t);
   file.close();
   return 0;
