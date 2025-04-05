@@ -35,7 +35,7 @@ class Tester
 {
     vector<T> v;
 
-    void mergesort(std::vector<T> &a, std::vector<T> &c, T st, T dr)
+    static void mergesort(std::vector<T> &a, std::vector<T> &c, T st, T dr)
     {
         if (st < dr)
         {
@@ -57,7 +57,7 @@ class Tester
                 a[i] = c[k++];
         }
     }
-    void RadixSort(std::vector<T> &v, long long B = 10)
+    static void RadixSort(std::vector<T> &v, long long B = 10)
     {
         long long Max = v[0], count[B];
         long long N = v.size();
@@ -86,7 +86,7 @@ class Tester
             v.swap(aux);
         }
     }
-    void QuickSort(std::vector<T> &a, long long st, long long dr)
+    static void QuickSort(std::vector<T> &a, long long st, long long dr)
     {
         if (st >= dr)
         {
@@ -133,7 +133,7 @@ class Tester
         QuickSort(a, more + 1, dr);
     }
 
-    void ShellSort(std::vector<T> &v)
+    static void ShellSort(std::vector<T> &v)
     {
         long long N = v.size();
         long long K = 1;
@@ -178,42 +178,36 @@ public:
         switch (m)
         {
         case STL:
-        {
             std::sort(v.begin(), v.end());
             break;
-        }
         case RADIX10:
-        {
             RadixSort(v);
             break;
-        }
         case RADIX2TO16:
-        {
-            RadixSort(v, 1 << 16 * 1LL);
+            RadixSort(v, 1LL << 16); // explicit: RadixSort(v, 1 << 16 * 1LL);
             break;
-        }
         case MERGE:
         {
             vector<T> aux(v.size());
-            mergesort(v, aux, 0, v.size() - 1); // TODO: ask about calling scheme
+            mergesort(v, aux, 0, v.size() - 1);
             break;
         }
         case SHELL:
-        {
             ShellSort(v);
             break;
-        }
         case QUICK:
-        {
-            QuickSort(v, 0, v.size() - 1); // same TODO here
+            QuickSort(v, 0, v.size() - 1);
             break;
-        }
+        default:
+            cout << "JALE\n";
+            break;
         }
     }
 };
 
-void Testcase(Tester<long long> t, const SortingMethods m)
+void Testcase(Tester<long long> t, const int i)
 {
+    SortingMethods m = static_cast<SortingMethods>(i);
     t.Sort(m);
     if (t.isSorted())
         cout << toString(m) << " was sorted successfully!\n";
@@ -248,9 +242,8 @@ int main(int argc, char *argv[])
         t.Push_back(num);
     for (int i = 0; i < 6; i++)
     {
-        SortingMethods method = static_cast<SortingMethods>(i);
-        cout << "penis" << '\n';
-        Testcase(t, method);
+        cout << i << '\n';
+        Testcase(t, i);
     }
 
     file.close();
