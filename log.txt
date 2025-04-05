@@ -1,10 +1,764 @@
 ==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_10000000_interval_-1000000_1000000.bin ====
-STL was sorted successfully! RADIX10 was sorted successfully! RADIX2TO16 was sorted successfully! MERGE was sorted successfully! SHELL was sorted successfully! QUICK was sorted successfully! HEAP was sorted successfully! BUCKET was sorted successfully!
-Time elapsed: 39.79 seconds
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
 
+
+
+Time elapsed: 43.43 seconds
 
 ==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_10000000_interval_-100_100.bin ====
-STL was sorted successfully! RADIX10 was sorted successfully! RADIX2TO16 was sorted successfully! MERGE was sorted successfully! SHELL was sorted successfully! QUICK was sorted successfully! HEAP was sorted successfully! BUCKET was sorted successfully!
-Time elapsed: 20.31 seconds
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
 
+
+
+Time elapsed: 23.25 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_10000000_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 45.44 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_10000000_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was NOT sorted correctly!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+Time elapsed: 10.14 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_10000000_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 18.24 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_100_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+Time elapsed: 1.06 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_100_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was NOT sorted correctly!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+Time elapsed: 1.08 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_100_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+Time elapsed: 1.06 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_100_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+Time elapsed: 1.06 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted\almostsorted_100_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+Time elapsed: 1.06 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_10000000_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 74.66 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_10000000_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 43.46 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_10000000_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 79.38 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_10000000_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 17.5 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_10000000_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 38.71 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_100_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.24 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_100_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.31 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_100_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.26 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_100_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.28 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\almostsorted_descending\almostsorted_descending_100_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.22 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_10000000_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 52.53 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_10000000_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 37.92 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_10000000_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 54.75 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_10000000_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 21.02 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_10000000_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 32.49 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_100_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.28 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_100_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.16 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_100_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.16 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_100_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 2.17 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\random\random_100_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.14 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\samenumbers\samenumbers_100_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.27 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\samenumbers\samenumbers_100_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.17 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\samenumbers\samenumbers_100_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.32 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\samenumbers\samenumbers_100_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.3 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\samenumbers\samenumbers_100_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.13 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_10000000_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 69.25 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_10000000_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 44.51 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_10000000_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 70.71 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_10000000_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 22.82 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_10000000_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 39.01 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_100_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.2 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_100_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.21 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_100_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.2 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_100_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 2.22 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted\sorted_100_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.23 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_10000000_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 75.78 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_10000000_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 39.41 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_10000000_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 75.23 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_10000000_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 17.56 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_10000000_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 38.4 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_100_interval_-1000000_1000000.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.39 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_100_interval_-100_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.17 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_100_interval_-2147483648_2147483647.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.19 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_100_interval_-9223372036854775808_9223372036854775807.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.28 seconds
+
+==== File: C:\Users\Alex\Desktop\Informatica\Python\ProiectSortari\generated_files\sorted_descending\sorted_descending_100_interval_0_100.bin ====
+STL was sorted successfully!
+RADIX10 was sorted successfully!
+RADIX2TO16 was sorted successfully!
+MERGE was sorted successfully!
+SHELL was sorted successfully!
+QUICK was sorted successfully!
+HEAP was sorted successfully!
+BUCKET was sorted successfully!
+
+
+
+Time elapsed: 1.24 seconds
 
