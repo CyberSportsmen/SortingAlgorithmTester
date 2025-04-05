@@ -2,6 +2,7 @@ import os
 import random
 import struct
 import threading
+import concurrent.futures
 
 # ---- constants ----
 max_long_long = 2 ** 63 - 1
@@ -22,6 +23,7 @@ listValueIntervals = [
 ]
 baseDir = "generated_files"
 # ---- END_config ----
+
 
 def createRandomArray(length, valueinterval):
     return [random.randint(*valueinterval) for _ in range(length)]
@@ -60,22 +62,22 @@ def createBinaryFile(tags, length, valueinterval):
         for value in arr:
             file.write(struct.pack("q", value))  # "q" = signed long long
 
+def process_case(tag, length, value_interval, case_number):
+    createBinaryFile(tag, length, value_interval)
+    print(f"finished case {case_number}!")
+
 def main():
-    threads = []
     testcaseNr = 0
-
-    for tag in listTags:
-        for length in listLengths:
-            for valueInterval in listValueIntervals:
-                testcaseNr += 1
-                thread = threading.Thread(target=createBinaryFile, args=(tag, length, valueInterval))
-                threads.append(thread)
-                thread.start()
-                print(f"Started testcase {testcaseNr}")
-
-    for thread in threads:
-        thread.join()
-    print("finished")
+    max_workers = 1
+    futures = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        for tag in listTags:
+            for length in listLengths:
+                for value_interval in listValueIntervals:
+                    testcaseNr += 1
+                    future = executor.submit(process_case, tag, length, value_interval, testcaseNr)
+                    futures.append(future)
+    print("finished all cases!")
 
 if __name__ == "__main__":
     main()
