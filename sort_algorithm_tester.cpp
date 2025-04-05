@@ -59,14 +59,14 @@ class Tester
                 a[i] = c[k++];
         }
     }
-    static void RadixSort(std::vector<T> &v, long long B = 10)
+    static void RadixSortPositive(std::vector<T> &vect, long long B = 10)
     {
-        long long Max = v[0], count[B];
-        long long N = v.size();
+        long long Max = vect[0], count[B];
+        long long N = vect.size();
 
         for (long long i = 1; i < N; i++)
-            if (v[i] > Max)
-                Max = v[i];
+            if (vect[i] > Max)
+                Max = vect[i];
 
         for (long long exp = 1; Max / exp > 0; exp *= B)
         {
@@ -74,19 +74,38 @@ class Tester
             std::fill(count, count + B, 0);
 
             for (long long i = 0; i < N; i++)
-                count[(v[i] / exp) % B]++;
+                count[(vect[i] / exp) % B]++;
             for (long long i = 1; i < B; i++)
                 count[i] += count[i - 1];
 
             for (long long i = N - 1; i >= 0; i--)
             {
-                long long c = (v[i] / exp) % B;
+                long long c = (vect[i] / exp) % B;
                 count[c]--;
-                aux[count[c]] = v[i];
+                aux[count[c]] = vect[i];
             }
 
-            v.swap(aux);
+            vect.swap(aux);
         }
+    }
+    static void RadixSort(std::vector<T> &v, long long B = 10)
+    {
+
+        std::vector<T> positives;
+        std::vector<T> negatives;
+        for (auto w : v)
+            if (w < 0)
+                negatives.push_back(-w);
+            else
+                positives.push_back(w);
+
+        RadixSortPositive(positives, B);
+        RadixSortPositive(negatives, B); // but it should be descending, so we need to concatenate it inversed
+        v.clear();
+        for (long long i = negatives.size() - 1; i >= 0; i--)
+            v.push_back(-negatives[i]);
+        for (auto w : positives)
+            v.push_back(w);
     }
     static void QuickSort(std::vector<T> &a, long long st, long long dr)
     {
