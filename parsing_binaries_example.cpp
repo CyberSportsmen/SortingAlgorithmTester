@@ -3,6 +3,8 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <string_view>
+#include <array>
 
 using namespace std;
 
@@ -13,10 +15,20 @@ enum SortingMethods
     RADIX2TO16,
     MERGE,
     SHELL,
-    QUICK
+    QUICK,
+    COUNT // important
 };
 
-char *sortingMethodToString[] = {"STL", "RADIX10", "RADIX2TO16", "MERGE", "SHELL", "QUICK"};
+std::string_view toString(SortingMethods method)
+{
+    static const std::array<std::string_view, SortingMethods::COUNT> names = {
+        "STL", "RADIX10", "RADIX2TO16", "MERGE", "SHELL", "QUICK"};
+
+    if (static_cast<size_t>(method) < names.size())
+        return names[method];
+    else
+        return "UNKNOWN";
+}
 
 template <class T>
 class Tester
@@ -204,9 +216,9 @@ void Testcase(Tester<long long> t, const SortingMethods m)
 {
     t.Sort(m);
     if (t.isSorted())
-        cout << sortingMethodToString[m] << " was sorted successfully!\n";
+        cout << toString(m) << " was sorted successfully!\n";
     else
-        cout << sortingMethodToString[m] << " was NOT sorted correctly!\n";
+        cout << toString(m) << " was NOT sorted correctly!\n";
 }
 
 int main(int argc, char *argv[])
