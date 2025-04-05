@@ -61,7 +61,7 @@ class Tester
     }
     static void RadixSortPositive(std::vector<T> &vect, long long B = 10)
     {
-        long long Max = vect[0], count[B];
+        long long Max = -1, count[B];
         long long N = vect.size();
 
         for (long long i = 1; i < N; i++)
