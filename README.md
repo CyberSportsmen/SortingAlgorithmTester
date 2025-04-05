@@ -9,3 +9,5 @@ Algorithms used:
 - Merge sort
 - C++ STL sort
 - Shell sort
+- Bucket sort
+- Heap sort

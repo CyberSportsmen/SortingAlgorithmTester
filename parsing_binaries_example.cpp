@@ -16,13 +16,15 @@ enum SortingMethods
     MERGE,
     SHELL,
     QUICK,
+    HEAP,
+    BUCKET,
     COUNT // important
 };
 
 std::string_view toString(SortingMethods method)
 {
     static const std::array<std::string_view, SortingMethods::COUNT> names = {
-        "STL", "RADIX10", "RADIX2TO16", "MERGE", "SHELL", "QUICK"};
+        "STL", "RADIX10", "RADIX2TO16", "MERGE", "SHELL", "QUICK", "HEAP", "BUCKET"};
 
     if (static_cast<size_t>(method) < names.size())
         return names[method];
@@ -155,6 +157,72 @@ class Tester
         }
     }
 
+    static void HeapSort(std::vector<T> &a, T n)
+    {
+        auto heapy = [&](int n, int i, auto &&heapy_ref) -> void
+        {
+            long long big = i;
+            long long lson = 2 * i + 1;
+            long long rson = 2 * i + 2;
+            if (lson < n && a[lson] > a[big])
+            {
+                big = lson;
+            }
+            if (rson < n && a[rson] > a[big])
+            {
+                big = rson;
+            }
+            if (big != i)
+            {
+                std::swap(a[i], a[big]);
+                heapy_ref(n, big, heapy_ref);
+            }
+        };
+
+        for (long long i = n / 2 - 1; i >= 0; i--)
+        {
+            heapy(n, i, heapy);
+        }
+
+        for (long long i = n - 1; i >= 1; i--)
+        {
+            std::swap(a[0], a[i]);
+            heapy(i, 0, heapy);
+        }
+    }
+
+    static void BucketSort(std::vector<long long> &a, long long nr = 10000)
+    {
+
+        long long mi = *std::min_element(a.begin(), a.end());
+        long long ma = *std::max_element(a.begin(), a.end());
+
+        long long size = (ma - mi) / nr;
+        if (size == 0)
+            size = 1;
+
+        std::vector<std::vector<long long>> bucket(nr);
+        for (size_t i = 0; i < a.size(); i++)
+        {
+            long long poz = std::min((a[i] - mi) / size, nr - 1);
+            bucket[poz].push_back(a[i]);
+        }
+
+        for (long long i = 0; i < nr; i++)
+        {
+            std::sort(bucket[i].begin(), bucket[i].end());
+        }
+
+        long long k = 0;
+        for (long long i = 0; i < nr; i++)
+        {
+            for (size_t j = 0; j < bucket[i].size(); j++)
+            {
+                a[k++] = bucket[i][j];
+            }
+        }
+    }
+
 public:
     Tester() = default;
 
@@ -198,8 +266,14 @@ public:
         case QUICK:
             QuickSort(v, 0, v.size() - 1);
             break;
+        case HEAP:
+            HeapSort(v, v.size());
+            break;
+        case BUCKET:
+            BucketSort(v);
+            break;
         default:
-            cout << "JALE\n";
+            cout << "Sort function was not called and the vector"; // was/wasn't sorted correctly
             break;
         }
     }
@@ -240,11 +314,8 @@ int main(int argc, char *argv[])
     Tester<long long> t;
     while (file.read(reinterpret_cast<char *>(&num), sizeof(long long)))
         t.Push_back(num);
-    for (int i = 0; i < 6; i++)
-    {
-        cout << i << '\n';
+    for (int i = 0; i < COUNT; i++)
         Testcase(t, i);
-    }
 
     file.close();
     return 0;
