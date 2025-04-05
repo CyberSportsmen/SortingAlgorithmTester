@@ -5,6 +5,8 @@
 #include <vector>
 #include <string_view>
 #include <array>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
@@ -302,9 +304,7 @@ void Testcase(Tester<long long> t, const int i)
 {
     SortingMethods m = static_cast<SortingMethods>(i);
     t.Sort(m);
-    if (t.isSorted())
-        cout << toString(m) << " was sorted successfully!\n";
-    else
+    if (!t.isSorted())
         cout << toString(m) << " was NOT sorted correctly!\n";
 }
 
@@ -333,8 +333,27 @@ int main(int argc, char *argv[])
     Tester<long long> t;
     while (file.read(reinterpret_cast<char *>(&num), sizeof(long long)))
         t.Push_back(num);
+    // TODO: INSTANTIATE THREADING HERE
+    // AND TIME FROM BEGINNING TO END OF THREAD
+    // output in console said times
+    // for (int i = 0; i < COUNT; i++)
+    //     Testcase(t, i);
+    std::vector<std::thread> threads;
     for (int i = 0; i < COUNT; i++)
-        Testcase(t, i);
+    {
+        threads.emplace_back([t, i]()
+                             {
+            auto start = std::chrono::steady_clock::now();
+            Testcase(t, i);
+            auto end = std::chrono::steady_clock::now();
+            auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+            std::cout << "Thread " << toString(static_cast<SortingMethods>(i)) << " took " << elapsed.count() << " ms\n"; });
+    }
+    for (auto &thread : threads)
+    {
+        if (thread.joinable())
+            thread.join();
+    }
 
     file.close();
     return 0;
