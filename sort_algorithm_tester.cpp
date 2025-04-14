@@ -9,6 +9,11 @@
 #include <thread>
 
 using namespace std;
+void nos()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+}
 
 enum SortingMethods
 {
@@ -309,7 +314,7 @@ void Testcase(Tester<long long> t, const int i)
 }
 
 int main(int argc, char *argv[])
-{
+{   nos();
     std::string filename;
     try
     {
