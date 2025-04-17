@@ -28,6 +28,8 @@
 2. Install Python dependencies:
    ```bash
    pip install matplotlib
+3. Run these commands in order.
+ ```
    python3 main.py
    ./tester_script.ps1
    python3 grafic.py
