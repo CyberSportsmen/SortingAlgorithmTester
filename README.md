@@ -4,7 +4,7 @@
 ##  How It Works
 
 1. **Test Generation**  
-   `main.py` generates random input test files inside the `generated_files` directory (The number of numbers can be ajusted as neede).
+   `main.py` generates random input test files inside the `generated_files` directory (The number of numbers can be ajusted as needed).
 
 2. **Sorting Execution**  
    `tester_script.ps1` runs `sort_algorithm_tester.cpp`, which benchmarks multiple sorting algorithms using the generated test files.  
