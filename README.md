@@ -1,7 +1,7 @@
 # SortingAlgorithmTester
 
 
-## ⚙️ How It Works
+##  How It Works
 
 1. **Test Generation**  
    `main.py` generates random input test files inside the `generated_files` directory.
@@ -17,15 +17,19 @@
 
  
 
-## 📊 Output Examples
+## Output Examples
 
 - `nlogn.png`
 - `speciali.png`
 
-## 🛠️ How to Run
+##  How to Run
 
 1. Make sure you have **Python 3.x**, **C++ compiler**, and **PowerShell** installed.
 2. Install Python dependencies:
    ```bash
    pip install matplotlib
+   python3 main.py
+   ./tester_script.ps1
+   python3 grafic.py
+
 
