@@ -17,10 +17,7 @@
 
  
 
-## Output Examples
 
-- `nlogn.png`
-- `speciali.png`
 
 ##  How to Run
 
@@ -33,5 +30,10 @@
    python3 main.py
    ./tester_script.ps1
    python3 grafic.py
+```
+## Output Examples
+
+- `nlogn.png`
+- `speciali.png`
 
 
