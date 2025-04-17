@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#include <string_view>
+
 #include <array>
 #include <chrono>
 #include <thread>
@@ -68,17 +68,18 @@ class Tester
     }
     static void RadixSortPositive(std::vector<T> &vect, long long B = 10)
     {
-        long long Max = -1, count[B];
+        long long Max = -1;
+        std::vector<long long> count(B, 0);
         long long N = vect.size();
 
-        for (long long i = 1; i < N; i++)
+        for (long long i = 0; i < N; i++)
             if (vect[i] > Max)
                 Max = vect[i];
 
-        for (long long exp = 1; Max / exp > 0; exp *= B)
+        for (__int128 exp = 1; exp <= Max; exp *= B)
         {
             std::vector<T> aux(N);
-            std::fill(count, count + B, 0);
+            std::fill(count.begin(), count.end(), 0);
 
             for (long long i = 0; i < N; i++)
                 count[(vect[i] / exp) % B]++;
@@ -106,11 +107,15 @@ class Tester
             else
                 positives.push_back(w);
 
-        RadixSortPositive(positives, B);
-        RadixSortPositive(negatives, B); // but it should be descending, so we need to concatenate it inversed
+        if (!positives.empty())
+            RadixSortPositive(positives, B);
+        if (!negatives.empty())
+            RadixSortPositive(negatives, B); // but it should be descending, so we need to concatenate it inversed
         v.clear();
+
         for (long long i = negatives.size() - 1; i >= 0; i--)
             v.push_back(-negatives[i]);
+
         for (auto w : positives)
             v.push_back(w);
     }
@@ -220,17 +225,17 @@ class Tester
     static void BucketSort(std::vector<long long> &a, long long nr = 10000)
     {
 
-        long long mi = *std::min_element(a.begin(), a.end());
-        long long ma = *std::max_element(a.begin(), a.end());
+        __int128 mi = *std::min_element(a.begin(), a.end());
+        __int128 ma = *std::max_element(a.begin(), a.end());
 
-        long long size = (ma - mi) / nr;
+        __int128 size = (ma - mi) / nr;
         if (size == 0)
             size = 1;
 
         std::vector<std::vector<long long>> bucket(nr);
         for (size_t i = 0; i < a.size(); i++)
         {
-            long long poz = std::min((a[i] - mi) / size, nr - 1);
+            long long poz = std::min(static_cast<long long>((a[i] - (mi)) / size), nr - 1);
             bucket[poz].push_back(a[i]);
         }
 
@@ -314,7 +319,8 @@ void Testcase(Tester<long long> t, const int i)
 }
 
 int main(int argc, char *argv[])
-{   nos();
+{
+    nos();
     std::string filename;
     try
     {
@@ -338,11 +344,7 @@ int main(int argc, char *argv[])
     Tester<long long> t;
     while (file.read(reinterpret_cast<char *>(&num), sizeof(long long)))
         t.Push_back(num);
-    // TODO: INSTANTIATE THREADING HERE
-    // AND TIME FROM BEGINNING TO END OF THREAD
-    // output in console said times
-    // for (int i = 0; i < COUNT; i++)
-    //     Testcase(t, i);
+    
     std::vector<std::thread> threads;
     for (int i = 0; i < COUNT; i++)
     {
