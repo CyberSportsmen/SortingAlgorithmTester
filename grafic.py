@@ -32,7 +32,7 @@ group1 = ["MERGE", "QUICK", "HEAP", "STL"]
 group2 = [col for col in df.columns if col not in group1]
 
 def plot_group(group, title, filename):
-    plt.figure(figsize=(14, 7))
+    plt.figure(figsize=(12, 6))
     for algo in group:
         if algo in df.columns:
             plt.plot(df.index, df[algo], marker='o', label=algo)
@@ -46,7 +46,8 @@ def plot_group(group, title, filename):
     avg_text = " | ".join(
         f"{algo}: {df[algo].mean():.2f} ms" for algo in group if algo in df.columns
     )
-    plt.figtext(0.5, -0.05, f"Medii: {avg_text}", ha="center", fontsize=10)
+    
+    plt.figtext(0.5, 0.001, f"Medii: {avg_text}", ha="center", fontsize=10)
 
     plt.tight_layout()
     plt.savefig(filename, bbox_inches='tight')
