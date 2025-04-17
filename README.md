@@ -34,7 +34,9 @@
 ## Output Examples
 
 - `nlogn.png`
+ ![nlogn](nlogn.png)
 - `speciali.png`
-- 
+- ![speciali](speciali.png)
+
 
 
